@@ -130,6 +130,7 @@
           <button
             type="button"
             class="btn btn-danger px-4 py-2"
+            @click="closeCanvas()"
             :disabled="carts.carts?.length === 0"
           >
             前往結帳
@@ -166,6 +167,9 @@ export default {
     openCanvas() {
       this.getCart();
       this.canvas.show();
+    },
+    closeCanvas() {
+      this.canvas.hide();
     },
     editCart(id, qty) {
       const data = {
