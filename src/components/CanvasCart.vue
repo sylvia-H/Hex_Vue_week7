@@ -126,15 +126,15 @@
         >
           清空購物車
         </button>
-        <form action="checkout-order.html">
+        <router-link to="./checkout">
           <button
-            type="submit"
+            type="button"
             class="btn btn-danger px-4 py-2"
             :disabled="carts.carts?.length === 0"
           >
             前往結帳
           </button>
-        </form>
+        </router-link>
       </div>
     </div>
   </div>

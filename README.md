@@ -1,6 +1,6 @@
 # Vue 作品實戰 2022 春季班 Week7 主線任務
 
-## [Demo](https://sylvia-h.github.io/Hex_Vue_week7/)
+## [Demo](https://sylvia-h.github.io/Hex_Vue_week7/#/products)
 
 ## 專案重點
 
