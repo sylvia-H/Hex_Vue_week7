@@ -60,6 +60,13 @@
   </section>
 </template>
 
+<style>
+.isFixed{
+  position: fixed;
+  top: 0;
+}
+</style>
+
 <script>
 export default {
   data() {

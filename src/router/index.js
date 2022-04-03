@@ -25,6 +25,14 @@ const routes = [
         component: () => import('../views/Front/FProductID.vue'),
       },
       {
+        path: 'aboutShipping',
+        component: () => import('../views/Front/FShippingView.vue'),
+      },
+      {
+        path: 'dietInfo',
+        component: () => import('../views/Front/FDietInfo.vue'),
+      },
+      {
         path: 'checkout',
         component: () => import('../views/Front/FCheckoutOrder.vue'),
       },
