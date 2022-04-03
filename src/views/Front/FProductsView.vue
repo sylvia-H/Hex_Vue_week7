@@ -1,7 +1,7 @@
 <template>
   <!-- 產品列表 -->
   <section class="container | my-20">
-    <h2 class="text-center">推薦好物</h2>
+    <h2 class="text-center">來選好食</h2>
     <hr class="my-6" />
     <div class="row">
       <!-- 第一張卡片 -->
@@ -21,13 +21,14 @@
               <p>優惠價：{{ item.price }}</p>
             </div>
             <div class="d-flex justify-content-between">
-              <a
-                href="#"
-                class="btn btn-outline-gray d-flex align-items-center"
-              >
-                <i class="bi bi-eye-fill me-2"></i>
-                詳細內容
-              </a>
+                <router-link :to="`/product/${item.id}`">
+                  <button type="button"
+                    class="btn btn-outline-gray d-flex align-items-center"
+                  >
+                    <i class="bi bi-eye-fill me-2"></i>
+                    詳細內容
+                  </button>
+                </router-link>
               <button
                 @click="addCart(item.id)"
                 :disabled="item.id === is_loadingItem"

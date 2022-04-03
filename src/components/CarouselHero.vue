@@ -6,7 +6,7 @@
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item w-100 h-100 active" data-bs-interval="2800">
+        <div class="carousel-item w-100 h-100 active" data-bs-interval="1800">
           <img
             src="https://storage.googleapis.com/vue-course-api.appspot.com/sylviah/1648970948991.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=dzAd8H6y6kWNuQjwfGNjZDuTI2yOKuL5kKpkinNC33QYj86epW6xawQM%2BxuldS%2FQkX0ZDnZGvVxVzkedmWebTWMW%2BpKwogFigdDgHwMMi4cJQMvA%2BSH6rTU%2FKtiINVbnE100%2BpPXYu65GTyw8eSGsWIp%2F%2FOYDkVpKsuz9cerr2d8cMDoX9pAzF03TCMPy%2FhzUUs9c6Gojnl50qbMJyHDUbRcZ%2Fd%2BQkV%2FoDLTxA9bF3B3fiHSzwHljS8rwK5s7h8EII7fI%2Bh9nude1N7kI4%2BYTZu%2F8WwfL8fYcrCWKyuctOYPeAPqXG3jPUbt%2FZZz9OGG2dJJ1ehaWt7uhb4sDfUSMg%3D%3D"
             class="w-100 h-100 img-cover"
@@ -15,18 +15,6 @@
           <div class="carousel-caption position-absolute top-60 start-30 translate-middle">
             <h2 class="text-brown1 fw-bold fz-6 fz-md-10 | mb-12">打造屬於你的餐飲生活</h2>
             <h5 class="fz-5">簡單 精緻 美好</h5>
-          </div>
-        </div>
-        <div class="carousel-item w-100 h-100" data-bs-interval="2800">
-          <img
-            src="https://storage.googleapis.com/vue-course-api.appspot.com/sylviah/1648971365103.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=R0AbTI%2Fx2J6QRv0HMDPyuiqFGAL0legZFQIEbHbDtqw7DBuEoSUo6MIaM9ApYiw4NDAYTnUmFUJOGysc3%2FoiGB7vMLeRgBRG1B%2FROp%2FmjbMovwX0aapeL702VU%2BrBIgwJHCc8HljNCcbFXlnXhqczqyYX%2BtJlj9ciuhIEqKA2ElCxnUzmspi581Ba%2BWLzDeGAWgEiWYyLlj3Ug0Uhqn6pdIFeQSeCnZoJ6DH6xCWil8EkNIRM0fNzAhv6Vzl8lZtJis1cK06DwjqSLxfrTXdcwYPt74rE6xp1ExUmoL%2FGE5I0ti%2FmhOzc157HigQ5etyVrT2I31xpPOImxnGaERYFw%3D%3D"
-            class="w-100 h-100 img-cover"
-            alt="Hero9"
-          />
-          <div class="carousel-caption position-absolute top-60 start-70 translate-middle">
-            <h2 class="text-gray1 fw-bold fz-6 fz-md-10 | mb-3">嚴選新鮮美味食材</h2>
-            <h2 class="text-gray1 fw-bold fz-6 fz-md-10 | mb-12">快速到府</h2>
-            <h5 class="fz-5">新鮮 健康 乾淨 養生</h5>
           </div>
         </div>
         <div class="carousel-item w-100 h-100" data-bs-interval="2800">
@@ -40,6 +28,18 @@
             <h2 class="text-cream1 fw-bold fz-6 fz-md-10 | my-5">好食遞 您的優質餐飲管家</h2>
             <!-- <h2 class="text-cream1 fw-bold fz-6 fz-md-10 | mb-10"></h2> -->
             <h5 class="text-light fz-5 | mb-5">協助您安排均衡營養的餐飲生活</h5>
+          </div>
+        </div>
+        <div class="carousel-item w-100 h-100" data-bs-interval="2800">
+          <img
+            src="https://storage.googleapis.com/vue-course-api.appspot.com/sylviah/1648971365103.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=R0AbTI%2Fx2J6QRv0HMDPyuiqFGAL0legZFQIEbHbDtqw7DBuEoSUo6MIaM9ApYiw4NDAYTnUmFUJOGysc3%2FoiGB7vMLeRgBRG1B%2FROp%2FmjbMovwX0aapeL702VU%2BrBIgwJHCc8HljNCcbFXlnXhqczqyYX%2BtJlj9ciuhIEqKA2ElCxnUzmspi581Ba%2BWLzDeGAWgEiWYyLlj3Ug0Uhqn6pdIFeQSeCnZoJ6DH6xCWil8EkNIRM0fNzAhv6Vzl8lZtJis1cK06DwjqSLxfrTXdcwYPt74rE6xp1ExUmoL%2FGE5I0ti%2FmhOzc157HigQ5etyVrT2I31xpPOImxnGaERYFw%3D%3D"
+            class="w-100 h-100 img-cover"
+            alt="Hero9"
+          />
+          <div class="carousel-caption position-absolute top-60 start-70 translate-middle">
+            <h2 class="text-gray1 fw-bold fz-6 fz-md-10 | mb-3">嚴選新鮮美味食材</h2>
+            <h2 class="text-gray1 fw-bold fz-6 fz-md-10 | mb-12">快速到府</h2>
+            <h5 class="fz-5">新鮮 健康 乾淨 養生</h5>
           </div>
         </div>
         <div class="carousel-item w-100 h-100" data-bs-interval="2800">
