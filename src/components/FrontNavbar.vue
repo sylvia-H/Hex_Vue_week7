@@ -1,15 +1,31 @@
 <template>
   <!-- 前台導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark | py-5">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top
+    bg-cream3 shadow-sm opacity-75 | py-5 py-md-4 py-lg-2">
     <div class="container">
       <!-- 首頁 logo -->
-      <router-link to="/" class="text-light me-8">
-        <i class="bi bi-house-heart-fill fs-4"></i>
-        首頁
+      <router-link to="/" class="text-green1 me-10">
+        <!-- <i class="bi bi-house-heart-fill fs-4"></i> -->
+        <h1><strong>好食遞</strong></h1>
       </router-link>
-      <router-link to="/products" class="text-light me-8">
-        <i class="bi bi-boxes fs-4"></i>
-        產品列表
+      <router-link to="/products" class="d-none d-lg-flex text-dark me-8">
+        <!-- <i class="bi bi-boxes fs-4"></i> -->
+        <span class="material-icons me-2">
+          restaurant_menu
+        </span>
+        <h5><strong>來選好食</strong></h5>
+      </router-link>
+      <router-link to="/products" class="d-none d-lg-flex text-dark me-8">
+        <!-- <i class="bi bi-boxes fs-4"></i> -->
+        <span class="material-icons me-2">
+          local_shipping
+        </span>
+        <h5><strong>如何好遞</strong></h5>
+      </router-link>
+      <router-link to="/products" class="d-none d-lg-flex text-dark me-8">
+        <!-- <i class="bi bi-boxes fs-4"></i> -->
+        <i class="bi bi-lightbulb-fill me-2"></i>
+        <h5><strong>食前好思</strong></h5>
       </router-link>
       <!-- 漢堡 -->
       <button
@@ -25,18 +41,48 @@
       </button>
       <!-- 選單內容 -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarList">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav py-6 py-md-5 py-lg-0">
+          <li class="nav-item d-flex align-items-center | my-4 me-4 d-lg-none">
+            <router-link to="/products" class="d-flex text-dark">
+              <!-- <i class="bi bi-boxes fs-4"></i> -->
+              <span class="material-icons me-2">
+                restaurant_menu
+              </span>
+              <h5><strong>來選好食</strong></h5>
+            </router-link>
+          </li>
+          <li class="nav-item d-flex align-items-center | my-4 me-4 d-lg-none">
+            <router-link to="/products" class="d-flex text-dark">
+              <!-- <i class="bi bi-boxes fs-4"></i> -->
+              <span class="material-icons me-2">
+                local_shipping
+              </span>
+              <h5><strong>如何好遞</strong></h5>
+            </router-link>
+          </li>
+          <li class="nav-item d-flex align-items-center | my-4 me-4 d-lg-none">
+            <router-link to="/products" class="d-flex text-dark">
+              <!-- <i class="bi bi-boxes fs-4"></i> -->
+              <i class="bi bi-lightbulb-fill fs-5 text-dark | me-2 me-lg-0"></i>
+              <h5><strong>食前好思</strong></h5>
+            </router-link>
+          </li>
           <!-- 購物車 -->
-          <li class="nav-item d-flex align-items-center | me-4"
+          <li class="nav-item d-flex align-items-center | my-4 me-4"
             @click="openCartCanvas" @keydown="canvas">
-            <i class="bi bi-cart3 fs-4 text-light | me-2 me-lg-0"></i>
-            <p class="d-lg-none text-light">購物車</p>
+            <i class="bi bi-cart3 fz-5 fz-md-6 text-dark | me-2 me-lg-0"></i>
+            <h5 class="d-lg-none text-dark">
+              <strong>購物車</strong>
+            </h5>
           </li>
           <!-- 後台管理人員登入 -->
-          <li class="nav-item d-flex align-items-center" @click="openLoginModel" @keydown="login">
+          <li class="nav-item d-flex align-items-center | my-4 me-4"
+            @click="openLoginModel" @keydown="login">
             <!-- <router-link to="/login"> -->
-              <i class="bi bi-person-circle fs-4 text-light | me-2 me-lg-0"></i>
-              <p class="d-lg-none text-light">後台管理人員登入</p>
+              <i class="bi bi-person-circle fz-5 fz-md-6 text-dark | me-2 me-lg-0"></i>
+              <h5 class="d-lg-none text-dark">
+                <strong>後台管理人員登入</strong>
+              </h5>
             <!-- </router-link> -->
           </li>
         </ul>
@@ -46,6 +92,12 @@
   <CanvasCart ref="cartCanvas" />
   <ModalLogin ref="loginModal" />
 </template>
+
+<style>
+.nav-item{
+  cursor: pointer;
+}
+</style>
 
 <script>
 import CanvasCart from '@/components/CanvasCart.vue';

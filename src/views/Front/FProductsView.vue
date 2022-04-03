@@ -1,6 +1,6 @@
 <template>
   <!-- 產品列表 -->
-  <section class="container | my-12">
+  <section class="container | my-20">
     <h2 class="text-center">推薦好物</h2>
     <hr class="my-6" />
     <div class="row">

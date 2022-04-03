@@ -1,19 +1,13 @@
 <template>
-  <FrontNavbar />
-  <div class="container-fluid position-relative">
-    <router-view />
-  </div>
-  <FrontFooter />
+  <CarouselHero />
 </template>
 
 <script>
-import FrontNavbar from '@/components/FrontNavbar.vue';
-import FrontFooter from '@/components/FrontFooter.vue';
+import CarouselHero from '@/components/CarouselHero.vue';
 
 export default {
   components: {
-    FrontNavbar,
-    FrontFooter,
+    CarouselHero,
   },
 };
 </script>

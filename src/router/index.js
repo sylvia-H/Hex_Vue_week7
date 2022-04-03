@@ -2,10 +2,20 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 const routes = [
   {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue'),
+  },
+  {
     path: '/',
     name: 'home',
-    component: () => import('../views/Front/FHomeView.vue'),
+    component: () => import('../views/Front/FHome.vue'),
     children: [
+      {
+        path: '/',
+        name: 'homeView',
+        component: () => import('../views/Front/FHomeView.vue'),
+      },
       {
         path: 'products',
         component: () => import('../views/Front/FProductsView.vue'),
