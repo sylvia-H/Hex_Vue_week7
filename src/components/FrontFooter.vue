@@ -1,16 +1,26 @@
 <template>
   <footer class="bg-dark">
-    <div class="container | d-flex ai-c justify-content-center | py-6">
+    <div class="container | d-flex ai-c justify-content-center | py-5">
       <!-- Copyright -->
-      <p class="h6 text-white text-center | d-none d-md-block">
+      <p class="h6 text-white text-center">
         © 2022. All Rights Reserved.
-      </p>
-      <p class="h6 text-white text-center | d-block d-md-none">
-        © 2022.<br />All Rights Reserved.
       </p>
     </div>
   </footer>
 </template>
+
+<style>
+html,
+body {
+  height: 100%;
+}
+footer {
+  position: relative;
+  overflow: hidden;
+  height: calc(10vh);
+}
+
+</style>
 
 <script>
 export default {

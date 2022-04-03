@@ -151,7 +151,7 @@ body {
 .carousel-inner, .carousel .item {
   position: relative;
   overflow: hidden;
-  height: calc(98vh);
+  height: calc(90vh);
 }
 .carousel-caption {
   position: absolute;
