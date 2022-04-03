@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-10">
+  <div class="container my-20">
     <div class="row flex-column-reverse flex-md-row">
       <!-- 訂單內容 -->
       <div class="col-12 col-lg-7">
