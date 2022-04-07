@@ -1,6 +1,15 @@
 <template>
   <!-- 產品列表 -->
-  <section class="container | my-20">
+  <section class="container | py-20">
+    <div class="row">
+      <div class="col-3">
+        <router-link to="../products">
+          <button class="bttn-unite bttn-md bttn-success bttn-no-outline py-2 fz-6">
+            ⇦ 返回
+          </button>
+        </router-link>
+      </div>
+    </div>
     <div class="row">
       <div class="col-12 col-md-6">
         <h2 class="text-center">
@@ -14,13 +23,15 @@
         <div class="row m-6">
           <div class="col-4">
             <div class="border overflow-hidden rounded-3">
-              <img class="w-100 heightLimit2 img-cover" :src="product.imageUrl" :alt="product.title"
+              <img class="w-100 heightLimit2 img-cover btn p-0"
+               :src="product.imageUrl" :alt="product.title"
                 @click="changeTemp" @keydown="enter">
             </div>
           </div>
           <div class="col-4" v-for="(imgUrl, i) in product.imagesUrl" :key="i">
             <div class="border overflow-hidden rounded-3">
-              <img class="w-100 heightLimit2 img-cover" :src="imgUrl" :alt="product.title"
+              <img class="w-100 heightLimit2 img-cover btn p-0"
+               :src="imgUrl" :alt="product.title"
                 @click="changeTemp" @keydown="enter">
             </div>
           </div>
@@ -285,7 +296,7 @@ export default {
       const loader = this.$loading.show();
       setTimeout(() => {
         loader.hide();
-      }, 1000);
+      }, 500);
       // this.isLoading = true;
       // setTimeout(() => {
       //   this.isLoading = false;
@@ -293,10 +304,10 @@ export default {
     },
   },
   mounted() {
+    this.showLoading();
     const { id } = this.$route.params;
     this.getProduct(id);
     this.getCart();
-    this.showLoading();
   },
 };
 </script>
